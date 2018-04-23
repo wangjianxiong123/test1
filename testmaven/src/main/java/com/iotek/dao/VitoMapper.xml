@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.iotek.dao.VitoMapper">
+    <insert id="addV">
+        INSERT INTO VITO(VITO_ID,VITO_NAME,VITO_AGE,VITO_PHONE,VITO_EMAIL)VALUES
+        (VITO_SEQ.nextval,#{vito_name},#{vito_age},#{vito_phone},#{vito_email})
+    </insert>
+    <select id="getV" resultType="com.iotek.modle.Vito">
+        SELECT *FROM VITO WHERE VITO_VIS_ID=#{vito_vis_id}
+    </select>
+</mapper>
