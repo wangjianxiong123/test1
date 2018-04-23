@@ -1,5 +1,6 @@
 package com.iotek.controller;
 
+import com.iotek.biz.SrecordBiz;
 import com.iotek.biz.VitoBiz;
 import com.iotek.modle.Srecord;
 import com.iotek.modle.Vistory;
@@ -18,6 +19,8 @@ import javax.servlet.http.HttpSession;
 public class VitoController {
     @Resource
     private VitoBiz vitoBiz;
+    @Resource
+    private SrecordBiz srecordBiz;
     @RequestMapping("/add")
     public String add(HttpSession session, Vito vito){
         Vistory vistory= (Vistory) session.getAttribute("vistory");
@@ -36,6 +39,7 @@ public class VitoController {
         if(vito1!=null){
             srecord.setRec_visto_id(vito1.getVito_id());
             srecord.setRec_job_id(id);
+            srecordBiz.addS(srecord);
         }
         return "success";
     }

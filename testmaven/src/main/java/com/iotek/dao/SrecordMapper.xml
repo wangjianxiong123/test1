@@ -2,6 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.iotek.dao.SrecordMapper">
     <insert id="addS">
-        INSERT INTO SRECORD VALUES (REC_ID,REC_VISTO_ID,REC_JOB_ID) VALUES ()
+        INSERT INTO SRECORD (REC_ID,REC_VISTO_ID,REC_JOB_ID) VALUES (SREC__SEQ.nextval,#{rec_id},#{rec_visto_id},#{rec_job_id})
     </insert>
 </mapper>
