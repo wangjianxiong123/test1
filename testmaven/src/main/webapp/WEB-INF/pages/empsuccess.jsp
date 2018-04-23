@@ -16,6 +16,11 @@
     <title></title>
 </head>
 <body>
+<a href="seachEmp">查看个人信息</a>
+<a>查看部门信息</a>
+<a>查看培训信息</a>
+<a>奖惩</a>
+<a>打卡</a>
 ${sessionScope.employ}
 </body>
 </html>

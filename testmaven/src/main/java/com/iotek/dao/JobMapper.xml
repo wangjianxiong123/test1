@@ -1,7 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.iotek.dao.JobMapper">
+    <insert id="addG">
+        INSERT INTO JOB (JOB_ID, JOB_NAME,JOB_SALARY, JOB_ADDRESS)
+        VALUES (JOB_SEQ.nextval,#{job_name},#{job_salary},#{job_address})
+    </insert>
+    <update id="updateG">
+        UPDATE JOB SET JOB_NAME=#{job_name},job_salary=#{job_salary},job_address=#{job_address}
+    </update>
+    <delete id="deleteG">
+        DELETE FROM JOB WHERE JOB_ID=#{job_id}
+    </delete>
     <select id="getAll" resultType="com.iotek.modle.Job">
         SELECT * FROM JOB
     </select>
+    <select id="getG" resultMap="vito_job_sre">
+        SELECT v.*,j.* FROM VITO v,JOB j ,SRECORD s WHERE
+        v.VITO_ID=s.REC_VISTO_ID AND j.JOB_ID=s.REC_JOB_ID AND JOB_ID=#{job_id}
+    </select>
+    <resultMap id="vito_job_sre" type="com.iotek.modle.Job" >
+        <id property="job_id" column="job_id"></id>
+        <result property="job_name" column="job_name"/>
+        <result property="job_salary" column="job_salary"/>
+        <result property="job_address" column="job_address"/>
+        <collection property="vitos" ofType="Vito">
+            <id property="vito_id" column="vito_id"/>
+            <result property="vito_name" column="vito_name"/>
+            <result property="vito_age" column="vito_age"/>
+            <result property="vito_phone" column="vito_phone"/>
+            <result property="vito_email" column="vito_email"/>
+            <result property="vito_sex" column="vito_sex"/>
+            <result property="vito_school" column="vito_school"/>
+            <result property="vito_vis_id" column="vito_vis_id"/>
+        </collection>
+    </resultMap>
 </mapper>

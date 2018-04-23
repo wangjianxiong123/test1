@@ -4,9 +4,9 @@
     <root id="1"/>
     <schema id="2" parent="1" name="SCOTT">
       <ObjectId>48</ObjectId>
-      <IntrospectionTimestamp>2018-04-23.10:36:30</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2018-04-23.15:20:03</IntrospectionTimestamp>
       <CreatedTimestamp>2018-04-13.15:50:30</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-23.10:34:42</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-04-23.15:19:55</ModifiedTimestamp>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -61,146 +61,173 @@
     <schema id="19" parent="1" name="XS$NULL">
       <ObjectId>2147483638</ObjectId>
     </schema>
-    <sequence id="20" parent="2" name="E_EMPLOY_SEQE">
+    <sequence id="20" parent="2" name="DEPT_SEQ">
+      <ObjectId>20577</ObjectId>
+      <CreatedTimestamp>2018-04-23.11:21:46</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.11:21:46</ModifiedTimestamp>
+      <SequenceIdentity>1..99999999</SequenceIdentity>
+      <CacheSize>-2147483648</CacheSize>
+    </sequence>
+    <sequence id="21" parent="2" name="E_EMPLOY_SEQE">
       <ObjectId>20362</ObjectId>
       <CreatedTimestamp>2018-04-20.11:36:22</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-20.11:36:22</ModifiedTimestamp>
       <SequenceIdentity>1..99999999</SequenceIdentity>
       <CacheSize>-2147483648</CacheSize>
     </sequence>
-    <sequence id="21" parent="2" name="ROOT_SEQE">
+    <sequence id="22" parent="2" name="JOB_SEQ">
+      <ObjectId>20580</ObjectId>
+      <CreatedTimestamp>2018-04-23.13:15:35</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.13:15:35</ModifiedTimestamp>
+      <SequenceIdentity>1..99999999</SequenceIdentity>
+      <CacheSize>-2147483648</CacheSize>
+    </sequence>
+    <sequence id="23" parent="2" name="ROOT_SEQE">
       <ObjectId>20377</ObjectId>
       <CreatedTimestamp>2018-04-20.15:59:02</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-20.15:59:02</ModifiedTimestamp>
       <SequenceIdentity>1..99999999</SequenceIdentity>
       <CacheSize>-2147483648</CacheSize>
     </sequence>
-    <sequence id="22" parent="2" name="SREC__SEQ">
+    <sequence id="24" parent="2" name="SREC__SEQ">
       <ObjectId>20576</ObjectId>
       <CreatedTimestamp>2018-04-23.10:34:42</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-23.10:34:42</ModifiedTimestamp>
       <SequenceIdentity>1..99999999</SequenceIdentity>
       <CacheSize>-2147483648</CacheSize>
     </sequence>
-    <sequence id="23" parent="2" name="VISTORY_SEQ">
+    <sequence id="25" parent="2" name="VISIT_SEQ">
+      <ObjectId>20581</ObjectId>
+      <CreatedTimestamp>2018-04-23.15:15:50</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.15:15:50</ModifiedTimestamp>
+      <SequenceIdentity>1..99999999</SequenceIdentity>
+      <CacheSize>-2147483648</CacheSize>
+    </sequence>
+    <sequence id="26" parent="2" name="VISTORY_SEQ">
       <ObjectId>20359</ObjectId>
       <CreatedTimestamp>2018-04-20.11:16:14</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-20.11:16:14</ModifiedTimestamp>
       <SequenceIdentity>1..99999999</SequenceIdentity>
       <CacheSize>-2147483648</CacheSize>
     </sequence>
-    <sequence id="24" parent="2" name="VITO_SEQ">
+    <sequence id="27" parent="2" name="VITO_SEQ">
       <ObjectId>20573</ObjectId>
       <CreatedTimestamp>2018-04-23.09:18:56</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-23.09:18:56</ModifiedTimestamp>
       <SequenceIdentity>1..99999999</SequenceIdentity>
       <CacheSize>-2147483648</CacheSize>
     </sequence>
-    <table id="25" parent="2" name="DEPT">
+    <table id="28" parent="2" name="DEPT">
       <ObjectId>20365</ObjectId>
       <CreatedTimestamp>2018-04-20.13:11:50</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-20.13:11:50</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="26" parent="2" name="EMPLOY">
+    <table id="29" parent="2" name="EMPLOY">
       <ObjectId>20062</ObjectId>
       <CreatedTimestamp>2018-04-13.15:50:30</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-19.10:02:50</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="27" parent="2" name="E_EMPLOY">
+    <table id="30" parent="2" name="E_EMPLOY">
       <ObjectId>20360</ObjectId>
       <CreatedTimestamp>2018-04-20.11:34:55</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-20.11:34:55</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="28" parent="2" name="JOB">
+    <table id="31" parent="2" name="JOB">
       <ObjectId>20367</ObjectId>
       <CreatedTimestamp>2018-04-20.13:16:31</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-23.09:10:13</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-04-23.13:12:23</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="29" parent="2" name="ROOTS">
+    <table id="32" parent="2" name="ROOTS">
       <ObjectId>20375</ObjectId>
       <CreatedTimestamp>2018-04-20.15:55:26</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-20.15:55:26</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="30" parent="2" name="SALARY">
+    <table id="33" parent="2" name="SALARY">
       <ObjectId>20369</ObjectId>
       <CreatedTimestamp>2018-04-20.13:24:47</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-20.13:24:47</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="31" parent="2" name="SRECORD">
+    <table id="34" parent="2" name="SRECORD">
       <ObjectId>20574</ObjectId>
       <CreatedTimestamp>2018-04-23.10:29:21</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-23.10:29:21</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="32" parent="2" name="TRAIN">
+    <table id="35" parent="2" name="TRAIN">
       <ObjectId>20371</ObjectId>
       <CreatedTimestamp>2018-04-20.13:32:01</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-20.13:32:01</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="33" parent="2" name="VISIT">
+    <table id="36" parent="2" name="VISIT">
       <ObjectId>20373</ObjectId>
       <CreatedTimestamp>2018-04-20.13:42:45</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-20.15:33:27</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-04-23.15:19:55</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="34" parent="2" name="VISTORY">
+    <table id="37" parent="2" name="VISTORY">
       <ObjectId>20357</ObjectId>
       <CreatedTimestamp>2018-04-20.11:13:52</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-20.11:13:52</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <table id="35" parent="2" name="VITO">
+    <table id="38" parent="2" name="VITO">
       <ObjectId>20363</ObjectId>
       <CreatedTimestamp>2018-04-20.13:07:53</CreatedTimestamp>
-      <ModifiedTimestamp>2018-04-23.09:59:59</ModifiedTimestamp>
+      <ModifiedTimestamp>2018-04-23.14:48:06</ModifiedTimestamp>
       <TemporaryPreserve>1</TemporaryPreserve>
     </table>
-    <routine id="36" parent="2" name="FIND">
+    <table id="39" parent="2" name="position">
+      <ObjectId>20578</ObjectId>
+      <CreatedTimestamp>2018-04-23.11:28:34</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.11:28:34</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <routine id="40" parent="2" name="FIND">
       <ObjectId>20260</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <CreatedTimestamp>2018-04-17.15:21:07</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-17.15:21:33</ModifiedTimestamp>
     </routine>
-    <routine id="37" parent="2" name="HELLO">
+    <routine id="41" parent="2" name="HELLO">
       <ObjectId>20258</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <CreatedTimestamp>2018-04-17.14:21:03</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-17.14:21:03</ModifiedTimestamp>
     </routine>
-    <routine id="38" parent="2" name="SAIS">
+    <routine id="42" parent="2" name="SAIS">
       <ObjectId>20259</ObjectId>
       <RoutineKind>procedure</RoutineKind>
       <CreatedTimestamp>2018-04-17.14:26:05</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-17.14:27:24</ModifiedTimestamp>
     </routine>
-    <column id="39" parent="25" name="DEPT_ID">
+    <column id="43" parent="28" name="DEPT_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="40" parent="25" name="DEPT_NAME">
+    <column id="44" parent="28" name="DEPT_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="41" parent="25" name="DEPT_CTIME">
+    <column id="45" parent="28" name="DEPT_CTIME">
       <Position>3</Position>
       <DataType>DATE|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="42" parent="25" name="DEPT_JOB">
+    <column id="46" parent="28" name="DEPT_JOB">
       <Position>4</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="43" parent="25" name="SYS_C007068">
+    <index id="47" parent="28" name="SYS_C007068">
       <ObjectId>20366</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-20.13:11:50</CreatedTimestamp>
@@ -209,7 +236,7 @@
       <ColNames>DEPT_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="44" parent="25" name="SYS_C007068">
+    <key id="48" parent="28" name="SYS_C007068">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-20.13:11:50</ModifiedTimestamp>
       <ColNames>DEPT_ID</ColNames>
@@ -217,42 +244,42 @@
       <UnderlyingIndexName>SYS_C007068</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="45" parent="26" name="EMPNO">
+    <column id="49" parent="29" name="EMPNO">
       <Position>1</Position>
       <DataType>NUMBER(8)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="46" parent="26" name="ENAME">
+    <column id="50" parent="29" name="ENAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="47" parent="26" name="JOB">
+    <column id="51" parent="29" name="JOB">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="48" parent="26" name="MGR">
+    <column id="52" parent="29" name="MGR">
       <Position>4</Position>
       <DataType>NUMBER(8)|0</DataType>
     </column>
-    <column id="49" parent="26" name="HIREDATE">
+    <column id="53" parent="29" name="HIREDATE">
       <Position>5</Position>
       <DataType>DATE|0</DataType>
     </column>
-    <column id="50" parent="26" name="SAL">
+    <column id="54" parent="29" name="SAL">
       <Position>6</Position>
       <DataType>NUMBER(8)|0</DataType>
     </column>
-    <column id="51" parent="26" name="COMM">
+    <column id="55" parent="29" name="COMM">
       <Position>7</Position>
       <DataType>NUMBER(8)|0</DataType>
     </column>
-    <column id="52" parent="26" name="DEPTNO">
+    <column id="56" parent="29" name="DEPTNO">
       <Position>8</Position>
       <DataType>NUMBER(8)|0</DataType>
     </column>
-    <index id="53" parent="26" name="SYS_C007008">
+    <index id="57" parent="29" name="SYS_C007008">
       <ObjectId>20063</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-13.15:50:30</CreatedTimestamp>
@@ -261,7 +288,7 @@
       <ColNames>EMPNO</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="54" parent="26" name="SYS_C007008">
+    <key id="58" parent="29" name="SYS_C007008">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-13.15:50:30</ModifiedTimestamp>
       <ColNames>EMPNO</ColNames>
@@ -269,61 +296,61 @@
       <UnderlyingIndexName>SYS_C007008</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <trigger id="55" parent="26" name="TA_EMPLOY_NAME">
+    <trigger id="59" parent="29" name="TA_EMPLOY_NAME">
       <ObjectId>20352</ObjectId>
       <CreatedTimestamp>2018-04-19.10:01:55</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-19.10:02:50</ModifiedTimestamp>
       <Events>I</Events>
       <Turn>before-row</Turn>
     </trigger>
-    <trigger id="56" parent="26" name="T_EMPLOY">
+    <trigger id="60" parent="29" name="T_EMPLOY">
       <ObjectId>20264</ObjectId>
       <CreatedTimestamp>2018-04-17.22:11:52</CreatedTimestamp>
       <ModifiedTimestamp>2018-04-18.09:33:27</ModifiedTimestamp>
       <Events>IUD</Events>
       <Turn>before-stmt</Turn>
     </trigger>
-    <column id="57" parent="27" name="EMP_ID">
+    <column id="61" parent="30" name="EMP_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="27" name="EMP_NAME">
+    <column id="62" parent="30" name="EMP_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="59" parent="27" name="EMP_AGE">
+    <column id="63" parent="30" name="EMP_AGE">
       <Position>3</Position>
       <DataType>NUMBER(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="60" parent="27" name="EMP_SEX">
+    <column id="64" parent="30" name="EMP_SEX">
       <Position>4</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="61" parent="27" name="EMP_PHONE">
+    <column id="65" parent="30" name="EMP_PHONE">
       <Position>5</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="62" parent="27" name="EMP_DEPT">
+    <column id="66" parent="30" name="EMP_DEPT">
       <Position>6</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="63" parent="27" name="EMP_JOB">
+    <column id="67" parent="30" name="EMP_JOB">
       <Position>7</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="64" parent="27" name="EMP_SAL">
+    <column id="68" parent="30" name="EMP_SAL">
       <Position>8</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="65" parent="27" name="SYS_C007055">
+    <index id="69" parent="30" name="SYS_C007055">
       <ObjectId>20361</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-20.11:34:55</CreatedTimestamp>
@@ -332,7 +359,7 @@
       <ColNames>EMP_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="66" parent="27" name="SYS_C007055">
+    <key id="70" parent="30" name="SYS_C007055">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-20.11:34:55</ModifiedTimestamp>
       <ColNames>EMP_ID</ColNames>
@@ -340,31 +367,26 @@
       <UnderlyingIndexName>SYS_C007055</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="67" parent="28" name="JOB_ID">
+    <column id="71" parent="31" name="JOB_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="68" parent="28" name="JOB_NAME">
+    <column id="72" parent="31" name="JOB_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="69" parent="28" name="JOB_DEPT_NAME">
+    <column id="73" parent="31" name="JOB_SALARY">
       <Position>3</Position>
-      <DataType>VARCHAR2(20)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="70" parent="28" name="JOB_SALARY">
-      <Position>4</Position>
       <DataType>NUMBER(*)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="71" parent="28" name="JOB_ADDRESS">
-      <Position>5</Position>
+    <column id="74" parent="31" name="JOB_ADDRESS">
+      <Position>4</Position>
       <DataType>VARCHAR2(10)|0</DataType>
     </column>
-    <index id="72" parent="28" name="SYS_C007073">
+    <index id="75" parent="31" name="SYS_C007073">
       <ObjectId>20368</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-20.13:16:31</CreatedTimestamp>
@@ -373,7 +395,7 @@
       <ColNames>JOB_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="73" parent="28" name="SYS_C007073">
+    <key id="76" parent="31" name="SYS_C007073">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-20.13:16:31</ModifiedTimestamp>
       <ColNames>JOB_ID</ColNames>
@@ -381,22 +403,22 @@
       <UnderlyingIndexName>SYS_C007073</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="74" parent="29" name="ROOT_ID">
+    <column id="77" parent="32" name="ROOT_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="75" parent="29" name="ROOT_NAME">
+    <column id="78" parent="32" name="ROOT_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="76" parent="29" name="ROOT_PASS">
+    <column id="79" parent="32" name="ROOT_PASS">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="77" parent="29" name="SYS_C007099">
+    <index id="80" parent="32" name="SYS_C007099">
       <ObjectId>20376</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-20.15:55:26</CreatedTimestamp>
@@ -405,7 +427,7 @@
       <ColNames>ROOT_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="78" parent="29" name="SYS_C007099">
+    <key id="81" parent="32" name="SYS_C007099">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-20.15:55:26</ModifiedTimestamp>
       <ColNames>ROOT_ID</ColNames>
@@ -413,42 +435,42 @@
       <UnderlyingIndexName>SYS_C007099</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="79" parent="30" name="SALARY_ID">
+    <column id="82" parent="33" name="SALARY_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="80" parent="30" name="SALARY_BASIC_SAL">
+    <column id="83" parent="33" name="SALARY_BASIC_SAL">
       <Position>2</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="81" parent="30" name="SALARY_BONUS">
+    <column id="84" parent="33" name="SALARY_BONUS">
       <Position>3</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="82" parent="30" name="SALARY_OVERTIME">
+    <column id="85" parent="33" name="SALARY_OVERTIME">
       <Position>4</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="83" parent="30" name="SALAYR_REWARD">
+    <column id="86" parent="33" name="SALAYR_REWARD">
       <Position>5</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="84" parent="30" name="SALARY_SOCIAL">
+    <column id="87" parent="33" name="SALARY_SOCIAL">
       <Position>6</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="85" parent="30" name="SALARY_EMP_ID">
+    <column id="88" parent="33" name="SALARY_EMP_ID">
       <Position>7</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="86" parent="30" name="SYS_C007081">
+    <index id="89" parent="33" name="SYS_C007081">
       <ObjectId>20370</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-20.13:24:47</CreatedTimestamp>
@@ -457,7 +479,7 @@
       <ColNames>SALARY_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="87" parent="30" name="SYS_C007081">
+    <key id="90" parent="33" name="SYS_C007081">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-20.13:24:47</ModifiedTimestamp>
       <ColNames>SALARY_ID</ColNames>
@@ -465,22 +487,22 @@
       <UnderlyingIndexName>SYS_C007081</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="88" parent="31" name="REC_ID">
+    <column id="91" parent="34" name="REC_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="89" parent="31" name="REC_VISTO_ID">
+    <column id="92" parent="34" name="REC_VISTO_ID">
       <Position>2</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="90" parent="31" name="REC_JOB_ID">
+    <column id="93" parent="34" name="REC_JOB_ID">
       <Position>3</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="91" parent="31" name="SYS_C007134">
+    <index id="94" parent="34" name="SYS_C007134">
       <ObjectId>20575</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-23.10:29:21</CreatedTimestamp>
@@ -489,7 +511,7 @@
       <ColNames>REC_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="92" parent="31" name="SYS_C007134">
+    <key id="95" parent="34" name="SYS_C007134">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-23.10:29:21</ModifiedTimestamp>
       <ColNames>REC_ID</ColNames>
@@ -497,45 +519,45 @@
       <UnderlyingIndexName>SYS_C007134</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="93" parent="32" name="TRAIN_ID">
+    <column id="96" parent="35" name="TRAIN_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="94" parent="32" name="TRAIN_THEME">
+    <column id="97" parent="35" name="TRAIN_THEME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="95" parent="32" name="TRAIN_CONTENT">
+    <column id="98" parent="35" name="TRAIN_CONTENT">
       <Position>3</Position>
       <DataType>VARCHAR2(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="96" parent="32" name="TRAIN_DDEPT_ID">
+    <column id="99" parent="35" name="TRAIN_DDEPT_ID">
       <Position>4</Position>
       <DataType>NUMBER(10)|0</DataType>
     </column>
-    <column id="97" parent="32" name="TRAIN_EMP_ID">
+    <column id="100" parent="35" name="TRAIN_EMP_ID">
       <Position>5</Position>
       <DataType>NUMBER(10)|0</DataType>
     </column>
-    <column id="98" parent="32" name="TRAIN_BEGIN">
+    <column id="101" parent="35" name="TRAIN_BEGIN">
       <Position>6</Position>
       <DataType>DATE|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="99" parent="32" name="TRAIN_END">
+    <column id="102" parent="35" name="TRAIN_END">
       <Position>7</Position>
       <DataType>DATE|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="100" parent="32" name="TRAIN_ADDRESS">
+    <column id="103" parent="35" name="TRAIN_ADDRESS">
       <Position>8</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="101" parent="32" name="SYS_C007088">
+    <index id="104" parent="35" name="SYS_C007088">
       <ObjectId>20372</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-20.13:32:01</CreatedTimestamp>
@@ -544,7 +566,7 @@
       <ColNames>TRAIN_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="102" parent="32" name="SYS_C007088">
+    <key id="105" parent="35" name="SYS_C007088">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-20.13:32:01</ModifiedTimestamp>
       <ColNames>TRAIN_ID</ColNames>
@@ -552,37 +574,37 @@
       <UnderlyingIndexName>SYS_C007088</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="103" parent="33" name="VISIT_ID">
+    <column id="106" parent="36" name="VISIT_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="104" parent="33" name="VISIT_JOB">
+    <column id="107" parent="36" name="VISIT_JOB">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="105" parent="33" name="VISIT_SALAY">
+    <column id="108" parent="36" name="VISIT_SALAY">
       <Position>3</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="106" parent="33" name="VISIT_ADDRESS">
+    <column id="109" parent="36" name="VISIT_ADDRESS">
       <Position>4</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="107" parent="33" name="VISIT_SCHOOL">
+    <column id="110" parent="36" name="VISIT_TIME">
       <Position>5</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="108" parent="33" name="VISIT_PRISE">
+    <column id="111" parent="36" name="VISIT_VISTORY_ID">
       <Position>6</Position>
-      <DataType>VARCHAR2(20)|0</DataType>
+      <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="109" parent="33" name="SYS_C007092">
+    <index id="112" parent="36" name="SYS_C007092">
       <ObjectId>20374</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-20.13:42:45</CreatedTimestamp>
@@ -591,7 +613,7 @@
       <ColNames>VISIT_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="110" parent="33" name="SYS_C007092">
+    <key id="113" parent="36" name="SYS_C007092">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-20.13:42:45</ModifiedTimestamp>
       <ColNames>VISIT_ID</ColNames>
@@ -599,22 +621,22 @@
       <UnderlyingIndexName>SYS_C007092</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="111" parent="34" name="V_ID">
+    <column id="114" parent="37" name="V_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="112" parent="34" name="V_NAME">
+    <column id="115" parent="37" name="V_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="113" parent="34" name="V_PASS">
+    <column id="116" parent="37" name="V_PASS">
       <Position>3</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="114" parent="34" name="SYS_C007046">
+    <index id="117" parent="37" name="SYS_C007046">
       <ObjectId>20358</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-20.11:13:52</CreatedTimestamp>
@@ -623,7 +645,7 @@
       <ColNames>V_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="115" parent="34" name="SYS_C007046">
+    <key id="118" parent="37" name="SYS_C007046">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-20.11:13:52</ModifiedTimestamp>
       <ColNames>V_ID</ColNames>
@@ -631,36 +653,44 @@
       <UnderlyingIndexName>SYS_C007046</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <column id="116" parent="35" name="VITO_ID">
+    <column id="119" parent="38" name="VITO_ID">
       <Position>1</Position>
       <DataType>NUMBER(10)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="117" parent="35" name="VITO_NAME">
+    <column id="120" parent="38" name="VITO_NAME">
       <Position>2</Position>
       <DataType>VARCHAR2(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="118" parent="35" name="VITO_AGE">
+    <column id="121" parent="38" name="VITO_AGE">
       <Position>3</Position>
       <DataType>NUMBER(3)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="119" parent="35" name="VITO_PHONE">
+    <column id="122" parent="38" name="VITO_PHONE">
       <Position>4</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="120" parent="35" name="VITO_EMAIL">
+    <column id="123" parent="38" name="VITO_EMAIL">
       <Position>5</Position>
       <DataType>VARCHAR2(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="121" parent="35" name="VITO_VIS_ID">
+    <column id="124" parent="38" name="VITO_VIS_ID">
       <Position>6</Position>
       <DataType>NUMBER(10)|0</DataType>
     </column>
-    <index id="122" parent="35" name="SYS_C007063">
+    <column id="125" parent="38" name="VITO_SEX">
+      <Position>7</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <column id="126" parent="38" name="VITO_SCHOOL">
+      <Position>8</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <index id="127" parent="38" name="SYS_C007063">
       <ObjectId>20364</ObjectId>
       <NameSurrogate>1</NameSurrogate>
       <CreatedTimestamp>2018-04-20.13:07:53</CreatedTimestamp>
@@ -669,7 +699,7 @@
       <ColNames>VITO_ID</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="123" parent="35" name="SYS_C007063">
+    <key id="128" parent="38" name="SYS_C007063">
       <NameSurrogate>1</NameSurrogate>
       <ModifiedTimestamp>2018-04-20.13:07:53</ModifiedTimestamp>
       <ColNames>VITO_ID</ColNames>
@@ -677,18 +707,55 @@
       <UnderlyingIndexName>SYS_C007063</UnderlyingIndexName>
       <Primary>1</Primary>
     </key>
-    <argument id="124" parent="36" name="EID">
+    <column id="129" parent="39" name="pos_id">
+      <Position>1</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="130" parent="39" name="pos_name">
+      <Position>2</Position>
+      <DataType>VARCHAR2(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="131" parent="39" name="pos_salary">
+      <Position>3</Position>
+      <DataType>NUMBER(6)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="132" parent="39" name="pos_dept_id">
+      <Position>4</Position>
+      <DataType>NUMBER(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="133" parent="39" name="SYS_C007139">
+      <ObjectId>20579</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2018-04-23.11:28:34</CreatedTimestamp>
+      <ModifiedTimestamp>2018-04-23.11:28:34</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>pos_id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="134" parent="39" name="SYS_C007139">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2018-04-23.11:28:34</ModifiedTimestamp>
+      <ColNames>pos_id</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C007139</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <argument id="135" parent="40" name="EID">
       <DataType>NUMBER|0</DataType>
     </argument>
-    <argument id="125" parent="36" name="PNAME">
+    <argument id="136" parent="40" name="PNAME">
       <ArgumentDirection>O</ArgumentDirection>
       <DataType>VARCHAR2|0</DataType>
     </argument>
-    <argument id="126" parent="36" name="PJOB">
+    <argument id="137" parent="40" name="PJOB">
       <ArgumentDirection>O</ArgumentDirection>
       <DataType>VARCHAR2|0</DataType>
     </argument>
-    <argument id="127" parent="38" name="EID">
+    <argument id="138" parent="42" name="EID">
       <DataType>NUMBER|0</DataType>
     </argument>
   </database-model>

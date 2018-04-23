@@ -20,12 +20,12 @@
 <table border="1" cellspacing="0" cellpadding="0">
     <thead>
     <tr>
-        <td>编号</td><td>名称</td><td>部门</td><td>薪水</td><td>地址</td><td>投递</td>
+        <td>编号</td><td>名称</td><td>薪水</td><td>地址</td><td>投递</td>
     </tr>
     </thead>
     <c:forEach var="job" items="${sessionScope.jobs}">
         <tr>
-            <td>${job.job_id}</td> <td>${job.job_name}</td> <td>${job.job_dept_name}</td> <td>${job.job_salary}</td>
+            <td>${job.job_id}</td> <td>${job.job_name}</td><td>${job.job_salary}</td>
             <td>${job.job_address}</td>
             <td>
                 <form method="post" action="send">
@@ -36,8 +36,9 @@
             </td>
         </tr>
     </c:forEach>
-
 </table>
+${error}
+${error1}
 <form action="add" method="post">
     姓名:<input type="text" name="vito_name"><br>
     年龄:<input type="text" name="vito_age"><br>

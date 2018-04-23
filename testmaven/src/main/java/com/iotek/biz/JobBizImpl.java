@@ -18,4 +18,24 @@ public class JobBizImpl implements JobBiz {
     public List<Job> getAll() {
         return jobMapper.getAll();
     }
+
+    @Override
+    public void addG(Job job) {
+        jobMapper.addG(job);
+    }
+
+    @Override
+    public void deleteG(Job job) {
+        jobMapper.deleteG(job);
+    }
+
+    @Override
+    public void updateG(Job job) {
+        jobMapper.updateG(job);
+    }
+
+    @Override
+    public Job getG(Job job) {
+        return jobMapper.getG(job);
+    }
 }

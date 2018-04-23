@@ -6,6 +6,7 @@ import com.iotek.modle.Srecord;
 import com.iotek.modle.Vistory;
 import com.iotek.modle.Vito;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
@@ -29,7 +30,7 @@ public class VitoController {
         return "success";
     }
     @RequestMapping("/send")
-    public String send(HttpSession session, HttpServletRequest request){
+    public String send(HttpSession session, HttpServletRequest request, Model model){
         Vistory vistory= (Vistory) session.getAttribute("vistory");
         Vito vito=new Vito();
         int id=Integer.parseInt(request.getParameter("id"));
@@ -40,7 +41,10 @@ public class VitoController {
             srecord.setRec_visto_id(vito1.getVito_id());
             srecord.setRec_job_id(id);
             srecordBiz.addS(srecord);
+            model.addAttribute("error","投递成功");
+            return "success";
         }
+        model.addAttribute("error1","投递失败,请填写简历");
         return "success";
     }
 

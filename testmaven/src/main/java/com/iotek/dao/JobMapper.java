@@ -9,4 +9,8 @@ import java.util.List;
  */
 public interface JobMapper {
     List<Job> getAll();
+    void addG(Job job);
+    void deleteG(Job job);
+    void updateG(Job job);
+    Job getG(Job job);
 }

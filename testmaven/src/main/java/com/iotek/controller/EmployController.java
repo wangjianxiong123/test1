@@ -25,4 +25,11 @@ public class EmployController {
         }
         return "../../emp";
     }
+    @RequestMapping("/seachEmp")
+    public String seachEmp(Employ employ, HttpSession session){
+        Employ employ1= (Employ) session.getAttribute("employ");
+        session.setAttribute("employ1",employ1);
+        return "emppages";
+
+    }
 }

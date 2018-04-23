@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.iotek.dao.DeptMapper">
+    <insert id="addD">
+        INSERT INTO DEPT(DEPT_ID,DEPT_NAME,DEPT_CTIME,DEPT_JOB) VALUES (DEPT_SEQ.nextval,#{dept_name},#{dept_ctime},#{dept_job})
+    </insert>
+</mapper>

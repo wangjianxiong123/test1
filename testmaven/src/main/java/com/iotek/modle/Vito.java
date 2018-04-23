@@ -1,6 +1,8 @@
 package com.iotek.modle;
 
 import java.lang.ref.PhantomReference;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Created by 13765 on 2018/4/23.
@@ -12,7 +14,9 @@ public class Vito {
     private String vito_phone;
     private String vito_email;
     private int vito_vis_id;
-
+    private String vito_sex;
+    private String vito_school;
+    private Set<Job> jobs=new HashSet<>();
     public Vito() {
     }
 
@@ -71,6 +75,30 @@ public class Vito {
         this.vito_vis_id = vito_vis_id;
     }
 
+    public String getVito_sex() {
+        return vito_sex;
+    }
+
+    public void setVito_sex(String vito_sex) {
+        this.vito_sex = vito_sex;
+    }
+
+    public String getVito_school() {
+        return vito_school;
+    }
+
+    public void setVito_school(String vito_school) {
+        this.vito_school = vito_school;
+    }
+
+    public Set<Job> getJobs() {
+        return jobs;
+    }
+
+    public void setJobs(Set<Job> jobs) {
+        this.jobs = jobs;
+    }
+
     @Override
     public String toString() {
         return "Vito{" +
@@ -80,6 +108,9 @@ public class Vito {
                 ", vito_phone='" + vito_phone + '\'' +
                 ", vito_email='" + vito_email + '\'' +
                 ", vito_vis_id=" + vito_vis_id +
+                ", vito_sex='" + vito_sex + '\'' +
+                ", vito_school='" + vito_school + '\'' +
+                ", jobs=" + jobs +
                 '}';
     }
 }
