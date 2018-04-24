@@ -10,6 +10,7 @@ public class Visit {
     private String visit_address;
     private String visit_time;
     private int visit_vistory_id;
+    private int visit_vito_id;
 
     public Visit() {
     }
@@ -62,6 +63,14 @@ public class Visit {
         this.visit_vistory_id = visit_vistory_id;
     }
 
+    public int getVisit_vito_id() {
+        return visit_vito_id;
+    }
+
+    public void setVisit_vito_id(int visit_vito_id) {
+        this.visit_vito_id = visit_vito_id;
+    }
+
     @Override
     public String toString() {
         return "Visit{" +
@@ -71,6 +80,7 @@ public class Visit {
                 ", visit_address='" + visit_address + '\'' +
                 ", visit_time='" + visit_time + '\'' +
                 ", visit_vistory_id=" + visit_vistory_id +
+                ", visit_vito_id=" + visit_vito_id +
                 '}';
     }
 }

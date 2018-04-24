@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.iotek.dao.PositionMapper">
+    <insert id="addPos">
+        INSERT INTO POSITION(POS_ID,POS_NAME,POS_SALARY,POS_DEPT_ID)VALUES
+        (POSITION_SEQ.nextval,#{pos_name},#{pos_salary},#{pos_dept_id})
+    </insert>
+    <update id="updatePos">
+        UPDATE  POSITION SET POS_NAME=#{pos_name},pos_salary=#{pos_salary},pos_dept_id=#{pos_dept_id}
+        where pos_id=#{pos_id}
+    </update>
+    <delete id="deletePos">
+        DELETE FROM POSITION WHERE POS_DEPT_ID=#{pos_dept_id}
+    </delete>
+    <delete id="deletePosition">
+        DELETE FROM POSITION WHERE POS_ID=#{pos_id}
+    </delete>
+    <select id="getAll" resultType="com.iotek.modle.Position">
+        SELECT * FROM POSITION
+    </select>
+
+</mapper>

@@ -1,9 +1,11 @@
 package com.iotek.controller;
 
 import com.iotek.biz.JobBiz;
+import com.iotek.biz.VisitBiz;
 import com.iotek.biz.VistoryBiz;
 import com.iotek.biz.VitoBiz;
 import com.iotek.modle.Job;
+import com.iotek.modle.Visit;
 import com.iotek.modle.Vistory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,6 +23,8 @@ import java.util.List;
 public class VistorController {
     @Resource
     private VistoryBiz vistoryBiz;
+    @Resource
+    private VisitBiz visitBiz;
     @Resource
     private JobBiz jobBiz;
     @RequestMapping("/login")
@@ -46,4 +50,14 @@ public class VistorController {
         model.addAttribute("error","用户名重复");
         return "../../regin";
     }
+    @RequestMapping("/inform")
+    public String inform( HttpServletRequest request, HttpSession session) {
+        Vistory vistory= (Vistory) request.getSession().getAttribute("vistory");
+        Visit visit=new Visit();
+        visit.setVisit_vistory_id(vistory.getV_id());
+        List<Visit> visits=visitBiz.getV(visit);
+        session.setAttribute("visits",visits);
+        return "visitConfor";
+    }
+
 }

@@ -16,6 +16,7 @@ public class Vito {
     private int vito_vis_id;
     private String vito_sex;
     private String vito_school;
+    private int vito_state;
     private Set<Job> jobs=new HashSet<>();
     public Vito() {
     }
@@ -99,6 +100,14 @@ public class Vito {
         this.jobs = jobs;
     }
 
+    public int getVito_state() {
+        return vito_state;
+    }
+
+    public void setVito_state(int vito_state) {
+        this.vito_state = vito_state;
+    }
+
     @Override
     public String toString() {
         return "Vito{" +
@@ -110,6 +119,7 @@ public class Vito {
                 ", vito_vis_id=" + vito_vis_id +
                 ", vito_sex='" + vito_sex + '\'' +
                 ", vito_school='" + vito_school + '\'' +
+                ", vito_state=" + vito_state +
                 ", jobs=" + jobs +
                 '}';
     }

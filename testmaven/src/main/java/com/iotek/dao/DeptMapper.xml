@@ -2,6 +2,21 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.iotek.dao.DeptMapper">
     <insert id="addD">
-        INSERT INTO DEPT(DEPT_ID,DEPT_NAME,DEPT_CTIME,DEPT_JOB) VALUES (DEPT_SEQ.nextval,#{dept_name},#{dept_ctime},#{dept_job})
+        INSERT INTO DEPT(DEPT_ID,DEPT_NAME,DEPT_CTIME) VALUES (DEPT_SEQ.nextval,#{dept_name},#{dept_ctime})
     </insert>
+    <update id="updateDept">
+      UPDATE DEPT SET DEPT_NAME=#{dept_name} where dept_id=#{dept_id}
+    </update>
+    <delete id="deleteDept">
+      DELETE FROM DEPT WHERE DEPT_ID=#{dept_id}
+    </delete>
+    <select id="getAll" resultType="com.iotek.modle.Dept">
+        SELECT * FROM DEPT
+    </select>
+    <select id="getOne" resultType="com.iotek.modle.Dept">
+        SELECT *FROM DEPT WHERE DEPT_NAME=#{dept_name}
+    </select>
+    <select id="getOneId" resultType="com.iotek.modle.Dept">
+         SELECT *FROM DEPT WHERE DEPT_ID=#{dept_id}
+    </select>
 </mapper>

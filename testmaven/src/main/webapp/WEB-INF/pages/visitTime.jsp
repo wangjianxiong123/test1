@@ -31,6 +31,7 @@
                 <input type="hidden" name="job_salary" value="${sessionScope.job.job_salary}">
                 <input type="hidden" name="job_address" value="${sessionScope.job.job_address}">
                 <input type="hidden" name="vistory_id" value="${sessionScope.visitory_id}">
+                <input type="hidden" name="vito_id" value="${sessionScope.vito_id}">
             </td>
         </form>
     </tr>

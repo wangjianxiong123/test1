@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * Created by 13765 on 2018/4/23.
@@ -46,6 +47,24 @@ public class VitoController {
         }
         model.addAttribute("error1","投递失败,请填写简历");
         return "success";
+    }
+    @RequestMapping("/confin")
+    public String confin(int vito_id,HttpSession session){
+       Vito vito=new Vito();
+        System.out.println("/////////////");
+        System.out.println(vito_id);
+       vito.setVito_id(vito_id);
+       vito.setVito_state(3);
+       vitoBiz.updateV(vito);
+        return "success";
+    }
+    @RequestMapping("/machsee")
+    public String machsee(int vito_id,HttpSession session){
+        Vito vito=new Vito();
+        vito.setVito_state(3);
+        List<Vito> vitos=vitoBiz.getVito(vito);
+        session.setAttribute("vitos",vitos);
+        return "machseeResult";
     }
 
 }

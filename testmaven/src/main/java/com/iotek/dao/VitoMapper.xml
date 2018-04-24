@@ -5,7 +5,13 @@
         INSERT INTO VITO(VITO_ID,VITO_NAME,VITO_AGE,VITO_PHONE,VITO_EMAIL)VALUES
         (VITO_SEQ.nextval,#{vito_name},#{vito_age},#{vito_phone},#{vito_email})
     </insert>
+    <update id="updateV">
+        UPDATE VITO SET VITO_STATE=#{vito_state} where vito_id=#{vito_id}
+    </update>
     <select id="getV" resultType="com.iotek.modle.Vito">
         SELECT *FROM VITO WHERE VITO_VIS_ID=#{vito_vis_id}
+    </select>
+    <select id="getVito" resultType="com.iotek.modle.Vito">
+        SELECT *FROM VITO WHERE VITO_STATE=#{vito_state}
     </select>
 </mapper>

@@ -16,7 +16,7 @@
     <title></title>
 </head>
 <body>
-<a >查看部门</a>
+<a href="checkDept">查看部门</a>
 <a href="seachMassage">招聘信息</a>
 <a></a>
 </body>

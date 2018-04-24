@@ -47,6 +47,6 @@
         </tr>
     </c:forEach>
 </table>
-<a href="rsuccess.jsp">返回</a>
+<a href="machsee">面试效果</a>
 </body>
 </html>

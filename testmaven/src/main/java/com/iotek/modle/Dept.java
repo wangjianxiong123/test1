@@ -9,7 +9,7 @@ public class Dept {
     private int dept_id;
     private String dept_name;
     private Date dept_ctime;
-    private String dept_job;
+
 
     public Dept() {
     }
@@ -38,13 +38,6 @@ public class Dept {
         this.dept_ctime = dept_ctime;
     }
 
-    public String getDept_job() {
-        return dept_job;
-    }
-
-    public void setDept_job(String dept_job) {
-        this.dept_job = dept_job;
-    }
 
     @Override
     public String toString() {
@@ -52,7 +45,6 @@ public class Dept {
                 "dept_id=" + dept_id +
                 ", dept_name='" + dept_name + '\'' +
                 ", dept_ctime=" + dept_ctime +
-                ", dept_job='" + dept_job + '\'' +
                 '}';
     }
 }

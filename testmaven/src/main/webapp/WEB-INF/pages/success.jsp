@@ -46,5 +46,6 @@ ${error1}
     邮箱:<input type="text" name="vito_email"><br>
     <input type="submit" value="添加">
 </form>
+<a href="inform">面试通知</a>
 </body>
 </html>

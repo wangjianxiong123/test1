@@ -5,4 +5,7 @@
     <select id="getE" resultType="com.iotek.modle.Employ">
         SELECT *FROM E_EMPLOY WHERE EMP_NAME=#{emp_name} and emp_phone=#{emp_phone}
     </select>
+    <select id="getEmpName" resultType="com.iotek.modle.Employ">
+        SELECT * FROM E_EMPLOY WHERE EMP_DEPT=#{emp_dept}
+    </select>
 </mapper>

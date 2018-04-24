@@ -2,7 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.iotek.dao.VisitMapper">
     <insert id="addVisit">
-        INSERT INTO VISIT (VISIT_ID, VISIT_JOB, VISIT_SALAY, VISIT_ADDRESS, VISIT_TIME, VISIT_VISTORY_ID) VALUES
+        INSERT INTO VISIT (VISIT_ID, VISIT_JOB, VISIT_SALARY, VISIT_ADDRESS, VISIT_TIME, VISIT_VISTORY_ID) VALUES
         (VISIT_SEQ.nextval,#{visit_job},#{visit_salary},#{visit_address},#{visit_time},#{visit_vistory_id})
     </insert>
+    <select id="getV" resultType="com.iotek.modle.Visit">
+        SELECT *FROM VISIT WHERE VISIT_VISTORY_ID=#{visit_vistory_id}
+    </select>
+
 </mapper>
