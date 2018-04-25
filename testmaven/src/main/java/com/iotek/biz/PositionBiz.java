@@ -13,4 +13,6 @@ public interface PositionBiz {
     List<Position> getAll();
     void addPos(Position position);
     void deletePosition(Position position);
+    List<Position> getDept(Position position);
+    Position getName(Position position);
 }

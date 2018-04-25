@@ -23,4 +23,14 @@ public class EmployBizImpl implements EmployBiz {
     public List<Employ> getEmpName(Employ employ) {
         return employMapper.getEmpName(employ);
     }
+
+    @Override
+    public void addEmp(Employ employ) {
+        employMapper.addEmp(employ);
+    }
+
+    @Override
+    public Employ getByNamePhone(Employ employ) {
+        return employMapper.getByNamePhone(employ);
+    }
 }

@@ -8,5 +8,8 @@
     <select id="getV" resultType="com.iotek.modle.Visit">
         SELECT *FROM VISIT WHERE VISIT_VISTORY_ID=#{visit_vistory_id}
     </select>
+    <select id="getVisit" resultType="com.iotek.modle.Visit">
+        SELECT *FROM VISIT WHERE VISIT_VITO_ID=#{visit_vito_id}
+    </select>
 
 </mapper>

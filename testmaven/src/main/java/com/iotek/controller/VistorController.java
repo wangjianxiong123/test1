@@ -30,7 +30,9 @@ public class VistorController {
     @RequestMapping("/login")
     public String login(Vistory vistory, HttpServletRequest request, HttpSession session) {
         Vistory vistory1 = vistoryBiz.getV(vistory);
-        List<Job> jobs=jobBiz.getAll();
+        Job job=new Job();
+        job.setJob_state(1);
+        List<Job> jobs=jobBiz.getAllD(job);
         System.out.println(jobs.size());
         if (vistory1 != null) {
             session.setAttribute("jobs",jobs);

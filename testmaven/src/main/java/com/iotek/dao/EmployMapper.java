@@ -10,5 +10,7 @@ import java.util.List;
 public interface EmployMapper {
     Employ getE(Employ employ);
     List<Employ> getEmpName(Employ employ);
+    void addEmp(Employ employ);
+    Employ getByNamePhone(Employ employ);
 
 }

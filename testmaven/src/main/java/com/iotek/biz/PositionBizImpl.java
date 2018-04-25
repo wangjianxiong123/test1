@@ -38,4 +38,14 @@ public class PositionBizImpl implements PositionBiz {
     public void deletePosition(Position position) {
         positionMapper.deletePosition(position);
     }
+
+    @Override
+    public List<Position> getDept(Position position) {
+        return positionMapper.getDept(position);
+    }
+
+    @Override
+    public Position getName(Position position) {
+        return positionMapper.getName(position);
+    }
 }

@@ -19,7 +19,7 @@
 <body>
 <table border="1" cellspacing="0" cellpadding="0">
     <tr>
-        <td>编号</td><td>名称</td><td>创建时间</td><td>修改</td><td>删除</td><td>部门员工详情</td>
+        <td>编号</td><td>名称</td><td>创建时间</td><td>修改</td><td>删除</td><td>部门详情</td>
     </tr>
     <c:forEach items="${sessionScope.depts}" var="dept">
         <tr>
@@ -38,7 +38,7 @@
             </td>
             <td>
             <form action="seachDept" method="post">
-                <input type="submit" value="部门员工详情">
+                <input type="submit" value="部门详情">
                 <input name="dept_id" value="${dept.dept_id}" type="hidden">
             </form>
             </td>

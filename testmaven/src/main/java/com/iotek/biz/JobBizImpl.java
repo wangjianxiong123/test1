@@ -15,8 +15,8 @@ public class JobBizImpl implements JobBiz {
     @Resource
     private JobMapper jobMapper;
     @Override
-    public List<Job> getAll() {
-        return jobMapper.getAll();
+    public List<Job> getAllD(Job job) {
+        return jobMapper.getAllD(job);
     }
 
     @Override
@@ -37,5 +37,10 @@ public class JobBizImpl implements JobBiz {
     @Override
     public Job getG(Job job) {
         return jobMapper.getG(job);
+    }
+
+    @Override
+    public void updateJob(Job job) {
+        jobMapper.updateJob(job);
     }
 }

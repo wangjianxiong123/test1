@@ -11,6 +11,8 @@ public class Visit {
     private String visit_time;
     private int visit_vistory_id;
     private int visit_vito_id;
+    private String visit_dept_name;
+    private int visit_state;
 
     public Visit() {
     }
@@ -71,6 +73,22 @@ public class Visit {
         this.visit_vito_id = visit_vito_id;
     }
 
+    public String getVisit_dept_name() {
+        return visit_dept_name;
+    }
+
+    public void setVisit_dept_name(String visit_dept_name) {
+        this.visit_dept_name = visit_dept_name;
+    }
+
+    public int getVisit_state() {
+        return visit_state;
+    }
+
+    public void setVisit_state(int visit_state) {
+        this.visit_state = visit_state;
+    }
+
     @Override
     public String toString() {
         return "Visit{" +
@@ -81,6 +99,8 @@ public class Visit {
                 ", visit_time='" + visit_time + '\'' +
                 ", visit_vistory_id=" + visit_vistory_id +
                 ", visit_vito_id=" + visit_vito_id +
+                ", visit_dept_name='" + visit_dept_name + '\'' +
+                ", visit_state=" + visit_state +
                 '}';
     }
 }

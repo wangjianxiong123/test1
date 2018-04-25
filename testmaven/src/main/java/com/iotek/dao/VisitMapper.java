@@ -10,5 +10,6 @@ import java.util.List;
 public interface VisitMapper {
     void addVisit(Visit visit);
     List<Visit> getV(Visit visit);
+    Visit getVisit(Visit visit);
 
 }

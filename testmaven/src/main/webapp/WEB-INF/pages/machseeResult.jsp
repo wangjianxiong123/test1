@@ -27,8 +27,10 @@
             <td>${vito.vito_name}</td><td>${vito.vito_age}</td><td>${vito.vito_sex}</td>
             <td>${vito.vito_phone}</td><td>${vito.vito_email}</td><td>${vito.vito_school}</td>
             <td>
-                <form>
+                <form method="post" action="duke">
                     <input value="录用" type="submit">
+                    <input type="hidden" name="vito_vis_id" value="${vito.vito_vis_id}">
+                    <input type="hidden" name="vito_id" value="${vito.vito_id}">
                 </form>
             </td>
         </tr>

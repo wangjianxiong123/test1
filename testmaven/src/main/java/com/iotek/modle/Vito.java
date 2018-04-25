@@ -13,7 +13,7 @@ public class Vito {
     private int vito_age;
     private String vito_phone;
     private String vito_email;
-    private int vito_vis_id;
+    private int vito_vis_id;//招聘id ,job_id
     private String vito_sex;
     private String vito_school;
     private int vito_state;

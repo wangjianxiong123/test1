@@ -1,7 +1,7 @@
 package com.iotek.controller;
 
-import com.iotek.biz.EmployBiz;
-import com.iotek.modle.Employ;
+import com.iotek.biz.*;
+import com.iotek.modle.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -16,6 +16,16 @@ import javax.servlet.http.HttpSession;
 public class EmployController {
     @Resource
     private EmployBiz employBiz;
+    @Resource
+    private VisitBiz visitBiz;
+    @Resource
+    private JobBiz jobBiz;
+    @Resource
+    private VitoBiz vitoBiz;
+    @Resource
+    private PositionBiz positionBiz;
+    @Resource
+    private DeptBiz deptBiz;
     @RequestMapping("/emp_login")
     public String login(Employ employ, HttpSession session){
         Employ employ1=employBiz.getE(employ);
@@ -29,7 +39,49 @@ public class EmployController {
     public String seachEmp(Employ employ, HttpSession session){
         Employ employ1= (Employ) session.getAttribute("employ");
         session.setAttribute("employ1",employ1);
-        return "emppages";
+        return "empself";
+
+    }
+    @RequestMapping("/changeJob")
+    public String changeJob(HttpServletRequest request, HttpSession session){
+        int emp_id=Integer.parseInt(request.getParameter("emp_id"));
+        session.setAttribute("emp_id",emp_id);
+        return "change";
+
+    }
+    @RequestMapping("/duke")
+    public String duke(HttpServletRequest request){
+        int vito_vis_id=Integer.parseInt(request.getParameter("vito_vis_id"));
+        //int vito_id=Integer.parseInt(request.getParameter("vito_id"));
+        Vito vito=new Vito();
+        vito.setVito_vis_id(vito_vis_id);
+        Job job=new Job();
+        job.setJob_id(vito_vis_id);
+        Vito vito1=vitoBiz.getV(vito);
+        Job job1=jobBiz.getG(job);
+        Dept dept=new Dept();
+        dept.setDept_name(job1.getJob_dept_name());
+        Dept dept1=deptBiz.getOne(dept);
+        Employ employ=new Employ();
+        Position position=new Position();
+        position.setPos_name(job1.getJob_name());
+        Position position1=positionBiz.getName(position);
+        employ.setEmp_name(vito1.getVito_name());
+        employ.setEmp_age(vito1.getVito_age());
+        employ.setEmp_sex(vito1.getVito_sex());
+        employ.setEmp_phone(vito1.getVito_phone());
+        employ.setEmp_dept_id(dept1.getDept_id());
+        employ.setEmp_job_id(position1.getPos_id());
+        employ.setEmp_sal(job1.getJob_salary());
+        Employ employ1=new Employ();
+        employ1.setEmp_name(vito1.getVito_name());
+        employ1.setEmp_phone(vito1.getVito_phone());
+        Employ employ2=employBiz.getByNamePhone(employ1);
+        if (employ2==null){
+            employBiz.addEmp(employ);
+            return "rsuccess";
+        }
+        return "rsuccess";
 
     }
 }

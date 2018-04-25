@@ -18,5 +18,11 @@
     <select id="getAll" resultType="com.iotek.modle.Position">
         SELECT * FROM POSITION
     </select>
+    <select id="getDept" resultType="com.iotek.modle.Position">
+        SELECT * FROM POSITION WHERE POS_DEPT_ID=#{pos_dept_id}
+    </select>
+    <select id="getName" resultType="com.iotek.modle.Position">
+        SELECT * FROM POSITION WHERE POS_NAME=#{pos_name}
+    </select>
 
 </mapper>

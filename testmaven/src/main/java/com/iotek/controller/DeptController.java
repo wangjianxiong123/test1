@@ -74,7 +74,7 @@ public class DeptController {
         System.out.println(dept);
         Dept dept1=deptBiz.getOneId(dept);
         Employ employ=new Employ();
-        employ.setEmp_dept(dept1.getDept_name());
+        employ.setEmp_dept_id(dept1.getDept_id());
         List<Employ> employ1=employBiz.getEmpName(employ);
         System.out.println(employ1);
         if(employ1.size()==0){
@@ -91,14 +91,21 @@ public class DeptController {
     }
     @RequestMapping("/seachDept")
     public String seachDept(HttpSession session,HttpServletRequest request){
-        int dept_id=Integer.parseInt(request.getParameter("dept_id"));
-        Dept dept=new Dept();
+
+        /*Dept dept=new Dept();
         dept.setDept_id(dept_id);
         Dept dept1=deptBiz.getOneId(dept);
         Employ employ=new Employ();
-        employ.setEmp_dept(dept1.getDept_name());
+        employ.setEmp_dept_id(dept1.getDept_id());
         List<Employ> employ1=employBiz.getEmpName(employ);
-        session.setAttribute("employs",employ1);
-        return "getEmployByName";
+        session.setAttribute("employs",employ1);*/
+        int dept_id=Integer.parseInt(request.getParameter("dept_id"));
+        Position position=new Position();
+        position.setPos_dept_id(dept_id);
+        List<Position> positions=positionBiz.getDept(position);
+        session.setAttribute("positions",positions);
+        session.setAttribute("dept_id",dept_id);
+        return "getPosition";
+        //"getEmployByName";
     }
 }

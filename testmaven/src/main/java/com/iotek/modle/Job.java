@@ -11,6 +11,8 @@ public class Job {
     private String job_name;
     private int job_salary;
     private String job_address;
+    private String job_dept_name;
+    private int job_state;
     private Set<Vito> vitos=new HashSet<>();
     public Job() {
     }
@@ -55,6 +57,22 @@ public class Job {
         this.vitos = vitos;
     }
 
+    public String getJob_dept_name() {
+        return job_dept_name;
+    }
+
+    public void setJob_dept_name(String job_dept_name) {
+        this.job_dept_name = job_dept_name;
+    }
+
+    public int getJob_state() {
+        return job_state;
+    }
+
+    public void setJob_state(int job_state) {
+        this.job_state = job_state;
+    }
+
     @Override
     public String toString() {
         return "Job{" +
@@ -62,6 +80,8 @@ public class Job {
                 ", job_name='" + job_name + '\'' +
                 ", job_salary=" + job_salary +
                 ", job_address='" + job_address + '\'' +
+                ", job_dept_name='" + job_dept_name + '\'' +
+                ", job_state='" + job_state + '\'' +
                 ", vitos=" + vitos +
                 '}';
     }

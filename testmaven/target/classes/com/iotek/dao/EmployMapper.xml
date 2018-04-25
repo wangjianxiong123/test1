@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.iotek.dao.EmployMapper">
-
+    <insert id="addEmp">
+        INSERT INTO E_EMPLOY (EMP_ID, EMP_NAME, EMP_AGE, EMP_SEX, EMP_PHONE, EMP_DEPT_ID, EMP_JOB_ID, EMP_SAL) VALUES (E_EMPLOY_SEQE.nextval,#{emp_name},#{emp_age},#{emp_sex},#{emp_phone},#{emp_dept_id},#{emp_job_id},#{emp_sal})
+    </insert>
     <select id="getE" resultType="com.iotek.modle.Employ">
         SELECT *FROM E_EMPLOY WHERE EMP_NAME=#{emp_name} and emp_phone=#{emp_phone}
     </select>
     <select id="getEmpName" resultType="com.iotek.modle.Employ">
-        SELECT * FROM E_EMPLOY WHERE EMP_DEPT=#{emp_dept}
+        SELECT * FROM E_EMPLOY WHERE EMP_JOB_ID=#{emp_job_id}
+    </select>
+    <select id="getByNamePhone" resultType="com.iotek.modle.Employ">
+        SELECT *FROM E_EMPLOY WHERE EMP_NAME=#{emp_name} and emp_phone=#{emp_phone}
     </select>
 </mapper>

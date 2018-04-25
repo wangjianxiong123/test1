@@ -59,7 +59,7 @@ public class VitoController {
         return "success";
     }
     @RequestMapping("/machsee")
-    public String machsee(int vito_id,HttpSession session){
+    public String machsee(HttpSession session){
         Vito vito=new Vito();
         vito.setVito_state(3);
         List<Vito> vitos=vitoBiz.getVito(vito);
