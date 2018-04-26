@@ -15,4 +15,5 @@ public interface PositionMapper {
     void deletePosition(Position position);
     List<Position> getDept(Position position);
     Position getName(Position position);
+    Position getPosition(Position position);
 }

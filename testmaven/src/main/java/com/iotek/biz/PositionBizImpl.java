@@ -48,4 +48,9 @@ public class PositionBizImpl implements PositionBiz {
     public Position getName(Position position) {
         return positionMapper.getName(position);
     }
+
+    @Override
+    public Position getPosition(Position position) {
+        return positionMapper.getPosition(position);
+    }
 }

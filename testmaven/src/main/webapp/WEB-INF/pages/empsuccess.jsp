@@ -17,8 +17,8 @@
 </head>
 <body>
 <a href="seachEmp">查看个人信息</a>
-<a href="">查看部门信息</a>
-<a href="">查看培训信息</a>
+<a href="seachDeptMessag">查看部门信息</a>
+<a href="trains">查看培训信息</a>
 <a href="">奖惩</a>
 <a href="">打卡</a>
 

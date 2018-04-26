@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.iotek.dao.TrainMapper">
+    <insert id="addTrain">
+        INSERT INTO TRAIN (TRAIN_ID, TRAIN_THEME, TRAIN_CONTENT, TRAIN_DEPT, TRAIN_POSITION, TRAIN_BEGIN, TRAIN_END, TRAIN_ADDRESS) VALUES
+        (TRAIN_SEQ.nextval,#{train_theme},#{train_content},#{train_dept},#{train_position},#{train_begin},#{train_end},#{train_address})
+    </insert>
+    <update id="updateTrain">
+        UPDATE TRAIN SET TRAIN_THEME=#{train_theme},train_content=#{train_content},train_dept=#{train_dept},train_position=#{train_position}
+        ,train_begin=#{train_begin},train_end=#{train_end},train_address=#{train_address} where train_id=#{train_id}
+    </update>
+    <delete id="deleteTrain">
+        DELETE FROM TRAIN WHERE TRAIN_ID=#{train_id}
+    </delete>
+    <select id="getByDept" resultType="com.iotek.modle.Train">
+        SELECT * FROM TRAIN WHERE TRAIN_DEPT=#{train_dept}
+    </select>
+    <select id="getByPosition" resultType="com.iotek.modle.Train">
+        SELECT * FROM TRAIN WHERE TRAIN_POSITION=#{train_position}
+    </select>
+    <select id="getAll" resultType="com.iotek.modle.Train">
+        SELECT * FROM TRAIN
+    </select>
+    <select id="getDeptPosition" resultType="com.iotek.modle.Train">
+        SELECT *FROM TRAIN WHERE TRAIN_POSITION=#{train_position} and train_dept=#{train_dept}
+    </select>
+
+</mapper>

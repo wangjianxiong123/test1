@@ -2,8 +2,11 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.iotek.dao.EmployMapper">
     <insert id="addEmp">
-        INSERT INTO E_EMPLOY (EMP_ID, EMP_NAME, EMP_AGE, EMP_SEX, EMP_PHONE, EMP_DEPT_ID, EMP_JOB_ID, EMP_SAL) VALUES (E_EMPLOY_SEQE.nextval,#{emp_name},#{emp_age},#{emp_sex},#{emp_phone},#{emp_dept_id},#{emp_job_id},#{emp_sal})
+        INSERT INTO E_EMPLOY (EMP_ID, EMP_NAME, EMP_AGE, EMP_SEX, EMP_PHONE, EMP_DEPT_ID, EMP_JOB_ID, EMP_SAL,EMP_TIME,EMP_STATE,EMP_EMAIL) VALUES (E_EMPLOY_SEQE.nextval,#{emp_name},#{emp_age},#{emp_sex},#{emp_phone},#{emp_dept_id},#{emp_job_id},#{emp_sal},#{emp_time},#{state},#{emp_email})
     </insert>
+    <update id="updateEmp">
+        UPDATE E_EMPLOY SET EMP_NAME=#{emp_name},emp_age=#{emp_age},emp_sex=#{emp_sex},emp_phone=#{emp_phone} where emp_id=#{emp_id}
+    </update>
     <select id="getE" resultType="com.iotek.modle.Employ">
         SELECT *FROM E_EMPLOY WHERE EMP_NAME=#{emp_name} and emp_phone=#{emp_phone}
     </select>

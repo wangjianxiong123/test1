@@ -69,6 +69,15 @@ public class PositionController {
         session.setAttribute("employs",employs);
         return "getEmployByName";
     }
+    @RequestMapping("/seachPositionDetail")
+    public String seachPosD(HttpServletRequest request,HttpSession session){
+        int pos_id=Integer.parseInt(request.getParameter("pos_id"));
+        Employ employ=new Employ();
+        employ.setEmp_job_id(pos_id);
+        List<Employ> employs=employBiz.getEmpName(employ);
+        session.setAttribute("employs",employs);
+        return "getEmployByNameDetail";
+    }
     @RequestMapping("/addPosition")
     public String addPos(Position position,HttpServletRequest request,HttpSession session){
         int dept_id=Integer.parseInt(request.getParameter("dept_id"));

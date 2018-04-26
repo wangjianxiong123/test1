@@ -12,4 +12,5 @@ public interface EmployBiz {
     List<Employ> getEmpName(Employ employ);
     void addEmp(Employ employ);
     Employ getByNamePhone(Employ employ);
+    void updateEmp(Employ employ);
 }

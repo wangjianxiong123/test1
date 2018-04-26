@@ -12,6 +12,9 @@ public class Employ {
     private int emp_dept_id;
     private int emp_job_id;
     private int emp_sal;
+    private String emp_time;
+    private int state;
+    private String emp_email;
 
     public Employ() {
     }
@@ -80,17 +83,44 @@ public class Employ {
         this.emp_sal = emp_sal;
     }
 
+    public String getEmp_time() {
+        return emp_time;
+    }
+
+    public void setEmp_time(String emp_time) {
+        this.emp_time = emp_time;
+    }
+
+    public int getState() {
+        return state;
+    }
+
+    public void setState(int state) {
+        this.state = state;
+    }
+
+    public String getEmp_email() {
+        return emp_email;
+    }
+
+    public void setEmp_email(String emp_email) {
+        this.emp_email = emp_email;
+    }
+
     @Override
     public String toString() {
         return "Employ{" +
                 "emp_id=" + emp_id +
                 ", emp_name='" + emp_name + '\'' +
-                ", emp_age='" + emp_age + '\'' +
+                ", emp_age=" + emp_age +
                 ", emp_sex='" + emp_sex + '\'' +
                 ", emp_phone='" + emp_phone + '\'' +
                 ", emp_dept_id=" + emp_dept_id +
                 ", emp_job_id=" + emp_job_id +
                 ", emp_sal=" + emp_sal +
+                ", emp_time='" + emp_time + '\'' +
+                ", state=" + state +
+                ", emp_email='" + emp_email + '\'' +
                 '}';
     }
 }

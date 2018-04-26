@@ -24,5 +24,8 @@
     <select id="getName" resultType="com.iotek.modle.Position">
         SELECT * FROM POSITION WHERE POS_NAME=#{pos_name}
     </select>
+    <select id="getPosition" resultType="com.iotek.modle.Position">
+        SELECT * FROM POSITION WHERE POS_ID=#{pos_id}
+    </select>
 
 </mapper>

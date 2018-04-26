@@ -38,7 +38,15 @@ public class EmployController {
     @RequestMapping("/seachEmp")
     public String seachEmp(Employ employ, HttpSession session){
         Employ employ1= (Employ) session.getAttribute("employ");
+        Dept dept=new Dept();
+        dept.setDept_id(employ1.getEmp_dept_id());
+        Dept dept1=deptBiz.getOneId(dept);
+        Position position=new Position();
+        position.setPos_id(employ1.getEmp_job_id());
+        Position position1=positionBiz.getPosition(position);
         session.setAttribute("employ1",employ1);
+        session.setAttribute("dept1",dept1);
+        session.setAttribute("position1",position1);
         return "empself";
 
     }
@@ -47,6 +55,21 @@ public class EmployController {
         int emp_id=Integer.parseInt(request.getParameter("emp_id"));
         session.setAttribute("emp_id",emp_id);
         return "change";
+
+    }
+    @RequestMapping("/updateEmploy")
+    public String updateEmploy(Employ employ,HttpServletRequest request, HttpSession session){
+        int emp_id=Integer.parseInt(request.getParameter("emp_id"));
+        employ.setEmp_id(emp_id);
+        employBiz.updateEmp(employ);
+        Employ employ1= (Employ) session.getAttribute("employ");
+        employ.setEmp_sal(employ1.getEmp_sal());
+        employ.setEmp_dept_id(employ1.getEmp_dept_id());
+        employ.setEmp_job_id(employ1.getEmp_job_id());
+        session.setAttribute("employ",employ);
+        System.out.println(employ1);
+        System.out.println(employ);
+        return "empsuccess";
 
     }
     @RequestMapping("/duke")

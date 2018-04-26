@@ -33,4 +33,9 @@ public class EmployBizImpl implements EmployBiz {
     public Employ getByNamePhone(Employ employ) {
         return employMapper.getByNamePhone(employ);
     }
+
+    @Override
+    public void updateEmp(Employ employ) {
+        employMapper.updateEmp(employ);
+    }
 }

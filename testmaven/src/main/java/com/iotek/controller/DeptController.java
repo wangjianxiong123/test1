@@ -108,4 +108,20 @@ public class DeptController {
         return "getPosition";
         //"getEmployByName";
     }
+    @RequestMapping("/seachDeptMessag")
+    public String seachDeptMessag(HttpSession session){
+        List<Dept> depts=deptBiz.getAll();
+        session.setAttribute("depts",depts);
+        return "empaAllDepts";
+    }
+    @RequestMapping("/seachDeptDetail")
+    public String seachDeptD(HttpSession session,HttpServletRequest request){
+        int dept_id=Integer.parseInt(request.getParameter("dept_id"));
+        Position position=new Position();
+        position.setPos_dept_id(dept_id);
+        List<Position> positions=positionBiz.getDept(position);
+        session.setAttribute("positions",positions);
+        session.setAttribute("dept_id",dept_id);
+        return "getPositionDetail";
+    }
 }

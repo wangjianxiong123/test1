@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: 13765
-  Date: 2018/4/20
-  Time: 15:00
+  Date: 2018/4/26
+  Time: 9:09
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -16,11 +16,8 @@
     <title></title>
 </head>
 <body>
-<a href="seachEmp">查看个人信息</a>
-<a href="seachDeptMessag">查看部门信息</a>
-<a href="trains">查看培训信息</a>
-<a href="">奖惩</a>
-<a href="">打卡</a>
-
+<a href="trainDept">部门培训</a>
+<a href="trainPosition">职位培训</a>
+<a href="trainDeptPosition">专业培训</a>
 </body>
 </html>
