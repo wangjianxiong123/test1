@@ -19,6 +19,7 @@
 <a href="checkDept">查看部门</a>
 <a href="seachMassage1">招聘信息</a>
 <a href="trainCompany">公司培训</a>
+<a href="pushiment">奖惩记录</a>
 <a></a>
 </body>
 </html>

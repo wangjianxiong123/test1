@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 
 /**
  * Created by 13765 on 2018/4/20.
@@ -96,6 +97,9 @@ public class EmployController {
         employ.setEmp_dept_id(dept1.getDept_id());
         employ.setEmp_job_id(position1.getPos_id());
         employ.setEmp_sal(job1.getJob_salary());
+        employ.setEmp_time(new Date());
+        employ.setEmp_state(1);
+        employ.setEmp_email(vito1.getVito_email());
         Employ employ1=new Employ();
         employ1.setEmp_name(vito1.getVito_name());
         employ1.setEmp_phone(vito1.getVito_phone());

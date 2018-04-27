@@ -1,5 +1,7 @@
 package com.iotek.modle;
 
+import java.util.Date;
+
 /**
  * Created by 13765 on 2018/4/20.
  */
@@ -12,8 +14,8 @@ public class Employ {
     private int emp_dept_id;
     private int emp_job_id;
     private int emp_sal;
-    private String emp_time;
-    private int state;
+    private Date emp_time;
+    private int emp_state;
     private String emp_email;
 
     public Employ() {
@@ -83,20 +85,20 @@ public class Employ {
         this.emp_sal = emp_sal;
     }
 
-    public String getEmp_time() {
+    public Date getEmp_time() {
         return emp_time;
     }
 
-    public void setEmp_time(String emp_time) {
+    public void setEmp_time(Date emp_time) {
         this.emp_time = emp_time;
     }
 
-    public int getState() {
-        return state;
+    public int getEmp_state() {
+        return emp_state;
     }
 
-    public void setState(int state) {
-        this.state = state;
+    public void setEmp_state(int emp_state) {
+        this.emp_state = emp_state;
     }
 
     public String getEmp_email() {
@@ -119,7 +121,7 @@ public class Employ {
                 ", emp_job_id=" + emp_job_id +
                 ", emp_sal=" + emp_sal +
                 ", emp_time='" + emp_time + '\'' +
-                ", state=" + state +
+                ", emp_state=" + emp_state +
                 ", emp_email='" + emp_email + '\'' +
                 '}';
     }

@@ -19,8 +19,8 @@
 <a href="seachEmp">查看个人信息</a>
 <a href="seachDeptMessag">查看部门信息</a>
 <a href="trains">查看培训信息</a>
-<a href="">奖惩</a>
-<a href="">打卡</a>
-
+<a href="myPushiments">奖惩</a>
+<a href="check_work">考勤打卡</a>
+<a href="salaryDetail">工资条</a>
 </body>
 </html>

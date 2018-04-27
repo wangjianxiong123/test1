@@ -52,7 +52,7 @@ public class TrainController {
         }
 
         System.out.println(employ);
-        return "showTrainDept";
+        return "trainDeptPosition";
     }
     @RequestMapping("/trainPosition")
     public String trainPosition(HttpSession session){
@@ -75,7 +75,7 @@ public class TrainController {
             }
         }
 
-        return "showTrainPosition";
+        return "trainDeptPosition";
     }
     @RequestMapping("/trainCompany")
     public String trainCompany(HttpSession session){
@@ -83,7 +83,7 @@ public class TrainController {
         session.setAttribute("trains",trains);
         return "trainAll";
     }
-    @RequestMapping("/trainDeptPosition")
+    @RequestMapping("/trainDeptPositions")
     public String trainDeptPosition(HttpSession session){
         Employ employ= (Employ) session.getAttribute("employ");
         Dept dept=new Dept();
@@ -96,10 +96,15 @@ public class TrainController {
         train.setTrain_position(position1.getPos_name());
         train.setTrain_dept(dept1.getDept_name());
         Train train1=trainBiz.getDeptPosition(train);
-        session.setAttribute("trains",train1);
-        System.out.println("1111111111");
-        return "showDeptPosition";
+        if (train1!=null){
+            session.setAttribute("trains",train1);
+            System.out.println("1111111111");
+            return "showDeptPosition";
+        }
+        return "trainDeptPosition";
+
     }
+
     @RequestMapping("/updateTrain")
     public String updateTrain(Train train,HttpSession session,HttpServletRequest request){
         int train_id=Integer.parseInt(request.getParameter("train_id"));

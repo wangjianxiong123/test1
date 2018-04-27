@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.iotek.dao.PushmentMapper">
+    <insert id="addPush">
+        INSERT INTO PUSHIMENTS (PUSH_ID, PUSH_MONEY, PUSH_TIME, PUSH_CAUSE, PUSH_EMP_ID) VALUES
+        (PUSH_SEQ.nextval,#{push_money},#{push_time},#{push_cause},#{push_emp_id})
+    </insert>
+    <update id="updatePush">
+        UPDATE PUSHIMENTS SET PUSH_MONEY=#{push_money},push_cause=#{push_cause},push_emp_id=#{push_emp_id} where push_id=#{push_id}
+    </update>
+    <delete id="deletePush">
+        DELETE FROM PUSHIMENTS WHERE PUSH_ID=#{push_id}
+    </delete>
+    <select id="getAll" resultType="com.iotek.modle.Pushiments">
+        SELECT *FROM PUSHIMENTS
+    </select>
+    <select id="getByEmp" resultType="com.iotek.modle.Pushiments">
+        SELECT *FROM PUSHIMENTS WHERE PUSH_EMP_ID=#{push_emp_id}
+    </select>
+
+</mapper>

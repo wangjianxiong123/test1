@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.iotek.dao.CheckWorkMapper">
+    <insert id="addCheck">
+        INSERT INTO CHECK_WORK (CHECK_ID, CHECK_BEGIN,CHECK_EMP_ID) VALUES
+        (CHECK_SEQ.nextval,#{check_begin},#{check_emp_id})
+    </insert>
+    <update id="updateCheck">
+        UPDATE CHECK_WORK SET CHECK_END=#{check_end} where check_id=#{check_id}
+    </update>
+    <select id="getByDate" resultType="com.iotek.modle.CheckWork">
+        SELECT * FROM CHECK_WORK WHERE CHECK_BEGIN=#{check_begin} AND check_emp_id=#{check_emp_id}
+    </select>
+    <select id="getById" resultType="com.iotek.modle.CheckWork">
+        SELECT * FROM CHECK_WORK WHERE CHECK_ID=#{check_id}
+    </select>
+</mapper>
